@@ -155,7 +155,7 @@ if (selected == 'Rag Chatbot'):
     #page title
     st.title('Preliminary Medical Rag Chatbot ') 
     
-    DB_FAISS_PATH="vectorstore/db_faiss"
+    DB_FAISS_PATH=""
     @st.cache_resource
     def get_vectorstore():
         embedding_model=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
@@ -217,4 +217,5 @@ if (selected == 'Rag Chatbot'):
     if __name__ == "__main__":
         main()
         
+
 
