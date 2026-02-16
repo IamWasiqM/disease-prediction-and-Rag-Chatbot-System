@@ -23,9 +23,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # loading the saved models
-diabetes_model = pickle.load(open("saved model files/diabetes_model.sav",'rb'))
-heart_disease_model = pickle.load(open("saved model files/heart_disease_model.sav",'rb'))
-parkinsons_model = pickle.load(open("saved model files/parkinsons_model.sav",'rb'))
+diabetes_model = pickle.load(open("diabetes_model.sav",'rb'))
+heart_disease_model = pickle.load(open("heart_disease_model.sav",'rb'))
+parkinsons_model = pickle.load(open("parkinsons_model.sav",'rb'))
 
 
 # sidebar for navigation
@@ -217,3 +217,4 @@ if (selected == 'Rag Chatbot'):
     if __name__ == "__main__":
         main()
         
+
